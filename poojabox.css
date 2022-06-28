@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: 'Lato', sans-serif; */
 }
 
 :root {
@@ -33,21 +32,14 @@
   justify-content: space-between;
 }
 
-/* .nav-logo {
-  border: 1px solid;
-  width: 14%;
-  height: 100%;
-  padding: 20px;
-  padding-left: 60px !important;
-} */
-
 .l{
   display: flex;
   justify-content: flex-end;
   width: 14%;
   height: 14vh;
-  padding: 24px;
+  padding: 30px;
   padding-top: 20px !important;
+  padding-right: 18px !important;
 }
 
 .lists {
@@ -66,7 +58,6 @@
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
   margin: 20px;
-  /* padding: 20px; */
   font-size: 15px;
 }
 
@@ -82,10 +73,6 @@ li:hover {
   cursor: pointer;
   border-bottom: 1px solid ;
 }
-
-/* .li {
-  margin-left: 1px !important;
-} */
 
 .list .home {
   margin-right: 8px;
@@ -207,27 +194,74 @@ li:hover {
   margin: auto;
 }
 
-.round-img {
-  border: 1px solid;
-  max-width: 130%;
-  height: 170px;
-  /* overflow: auto; */
-  /* text-overflow: ellipsis; */
-  /* overflow-x: auto; */
-  /* display: grid; */
-  /* grid-template-columns: auto auto auto auto auto auto; */
+
+.container {
   display: flex;
-  margin-left: 12px;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
 }
 
-.images-box {
-  padding: 15px;
+.horizontal-scroll {
+  width: 88%;
+  height: 27vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
 }
 
-.images {
+.horizontal-scroll .btn-scroll {
+  background-color: #fff;
+  box-shadow: 0 2px 2px grey;
+  color: #999;
+  padding: 5px 8px;
+  border:0;
   border-radius: 50%;
-  width: 125%;
-  height: 110%;
+  margin: 0 5px;
+  z-index: 1;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.storys-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  transition: 0.5s all ease-out;
+}
+
+.story-circle {
+  width: 170px;
+  height: 170px;
+  margin: 16px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+
+.all {
+  display: block;
+}
+
+.all p {
+  text-align: center;
+  font-family: 'Lato',sans-serif;
+}
+
+.story-circle img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
 }
 
 /******************* 
@@ -258,7 +292,6 @@ li:hover {
 .img-sections {
   width: 88%;
   margin: 60px auto;
-  /* height: 43.4vh; */
   height: 39vh;
 }
 
@@ -286,7 +319,7 @@ li:hover {
 .bg-title{
   position: absolute;
   top: 100%;
-  font-size: 12.9px;
+  font-size: 14.4px;
 }
 .bg-btn{
   position: absolute;
@@ -305,11 +338,6 @@ li:hover {
   font-family: 'Lato',sans-serif;
 }
 
-/* .pic-unique:hover {
-  background-image: url(rakhi2.jpg);
-} */
-
-
 
 .unique:hover {
   background-image: url(rakhi2.jpg);
@@ -327,7 +355,6 @@ li:hover {
 /******** BACKGROUND IMAGE *****/
 .bg-image {
   width: 100%;
-  /* border: 5px solid black; */
   margin-top: 30px;
   margin-bottom: -20px;
 }
@@ -337,18 +364,11 @@ li:hover {
 .animated-container {
   margin-top: 90px;
   margin-bottom: -20px;
-  /* display: grid; */
-  /* grid-template-columns: auto auto auto; */
 }
 
 .gif {
   width: 100%;
 }
-
-/* .three-img {
-  width: 100%;
-  height: 68vh;
-} */
 
 /*****
       LAST SIX IMAGE SECTIOMN START ***************/
@@ -403,7 +423,6 @@ li:hover {
 }
 
  .bottom-box h2 {
-    /* font-weight: 520; */
     color: var(--primary-color);
     padding-bottom: 5px;
     font-size: 20px;
@@ -411,7 +430,7 @@ li:hover {
 
 .para {
     font-family: 'Lato', sans-serif;
-    font-size: 13.46px;
+    font-size: 15px;
     word-spacing: 1px;
     line-height: 25px;
     font-weight: 400;
@@ -435,11 +454,10 @@ li:hover {
 }
 
 .svg {
-  /* border: 1px solid; */
   width: 10%;
   height: 4vh;
   padding-bottom: 6px;
-  /* font-size: 10px; */
+  fill: white;
 }
 
 .service .svg-two {
@@ -449,12 +467,9 @@ li:hover {
 }
 
 .service {
-    /* border: 1px solid; */
     border-right: 1px solid rgba(0, 0, 0, 0.335);
-    /* border-left: 1px black; */
     width: 100%;
     text-align: center;
-    /* padding: 40px; */
 }
 
 /* Bottom container section end */
@@ -469,9 +484,6 @@ li:hover {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 15px;
-    /* background-color: #ffafb6; */
-    /* margin-top: 5px; */
-    /* flex-direction: row; */
 }
 
 .box {
@@ -483,21 +495,25 @@ li:hover {
 .boxes {
   width: 110%;
   padding-left: 50px;
+  position: relative;
 }
 
 .logo {
-  padding-top: 18px;
   width: 100%;
-  height: 120px;
+  height: 200px;
+  margin-top: -30px;
 }
 
 .fb {
   border: 1px solid white;
-  padding: 6px 16px;
+  padding: 8px 16px;
   border-radius: 5px;
   color: white;
   font-family: 'Lato',sans-serif;
   font-size: 13px;
+  position: absolute;
+  top: 160px;
+  left: 110px;
 }
 
 .fb:hover {
@@ -515,11 +531,14 @@ li:hover {
 
 .insta {
   border: 1px solid white;
-  padding: 6px 14px;
+  padding: 8px 14px;
   border-radius: 5px;
   color: white;
   font-family: 'Lato',sans-serif;
   font-size: 13px;
+  position: absolute;
+  top: 160px;
+  left: 300px;
 }
 
 .insta i {
@@ -531,11 +550,10 @@ li:hover {
 .boxs {
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
 }
 
 .footer-title {
-    margin-top: 5px;
+    margin-top: 15px;
     padding: 25px 0;
     font-family: 'Lato',sans-serif;
     font-size: 20px;
@@ -560,7 +578,6 @@ li:hover {
 
 .contact p {
   font-family: 'Lato', sans-serif;
-  /* color: rgba(245, 245, 245, 0.959); */
   color: white;
   font-size: 18px;
   padding-right: 5px;
@@ -585,7 +602,7 @@ li:hover {
 
 .apple-icon {
   width: 90%;
-  margin-left: -10px;
+  margin-left: -8px;
 }
 
 .icon-right{
@@ -615,21 +632,6 @@ li:hover {
   font-weight: 500;
   font-size: 14px;
 }
-
-/* .whatsapp-icon {
-  position: absolute;
-  margin-right: 0px;
-  height: 40px;
-  width: 40px;
-} */
-
-
-/* .icons {
-  width: 50%;
-  height: 200%;
-  display: flex;
-  justify-content: space-evenly;
-} */
 
 /* ICON SECTION END */
 
